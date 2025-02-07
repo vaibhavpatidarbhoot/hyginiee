@@ -1,0 +1,3370 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>Hyginiee</title>
+   
+<link rel="stylesheet" src="./style.css" />
+<link rel="stylesheet" herf="https://raw.githubusercontent.com/vaibhavpatidarbhoot/hyginiee/refs/heads/main/style.css" />
+
+
+
+
+<style>
+
+:root {
+  --image-0: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVHgBlYvBCQAhDAQD18CVZCfagXag5fqzBBVNYEGMOjCfZOejien+3Uw6shtU1iqB502RQzqEEf4JHxjGm2AXYhBIAUPR0QXhNRAMu9AAWCQgLs++jFwAAAAASUVORK5CYII=);
+  --image-1: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADHSURBVHgBjZCxFYIwEIb/BArfs2GExAlYwVJt3EA2sLXUCXxOgE4glVg6QjYg4gKWFoYzgDzFh8CfJne57+7PMTRIHBMPQ3fBDflkwzxHjCmY50HPpGK/wOh8WxJoDYLX1JBgxk4NiNPQdl7Z6wB/xIvzmbC1QIAOZZxfCnsiTgIGJ6y9MtyJaAfKVBlzP7/rqYwKSMbXxGbFF6Jz73oiddM0V5zSOd4bqtQGlP9ixqu7wr4NKKEHIlupKlsZzAZ9ZZch+ta+AHe0RmVarSn1AAAAAElFTkSuQmCC);
+  --image-2: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAANCAYAAAC6hw6qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFJSURBVHgBtZPBTcNAEEX/rC2k3FIBrNMAKSHcQBxIKgAqgA6iVBBRQaACOJHccAeYBvCGFECOBNkeZg2WbGIrmDj/tJ4dzfOfmSVUSE/DHhz3UMXcBaHNjHZ2x0QBFAzi6MWceD5qiNYg5J4R+AI5wAYZKeInSXxjTr1gUzJlIIIzlGMP28lnxJfi2lQlqM50MRTYUwMwK/vjYWe2GFclkDd7ey9tH2HJwAOUzCuK5vY7jdtc1z0Ac48SmS9IV9Q24vbot1sLfJYi3SzABB8cj/66DPox7EM5V8SlHVqDksxPg5xJ6sAOvubW5cFEalziuAAlNCh9H7ZVy5nIE+oXLhgBrwQ68JYKDcoWfD3eHzB4VLggdFXLHX4fdyQ9nd8S6LwQ3HN1ow4L+kiupZcmH+LPlbczoG0vO8kgg0qb7/67kLWVvoQffQHVl4v/iU6+ZwAAAABJRU5ErkJggg==);
+  --image-3: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFySURBVHgBrZRRTsJAEIb/mZKobxzAxOUGeALlyfCmJ+AI4AnEG8gJlBPgG/EJvIGegDXxADxiYjvOtgHpSqVj/Ju0zb/pt/9OZ5egctOFAzX64R3yOfLdlodBjXAjakwg0i6sJDw7BgY4T7EB5DqHUQxJtgEQwhxGMaiUAsjkFUZpEjQjz8MoTRJBiJYwivEPCsspzyzShFGsl488B6MYGfltg5jOYBTjI52XHEHbTRamJbG/aoWazEvuIQ9gEBeTy/O2SUR9GFT84lV2p/3y/Ze0Ad30bViTUUDCkkRkFKfJN2ddSFUakmRSp8gbSJ4mk9vSKKFNB8lsH4hiQ2vxQKBeZHtB2qk68X7unVU2UPRLzCZooqf3Huokyb/Q+HSUzELj7Rj2wjz0F8fjXyFrEB8l9yK4xO7plyR4zFbpdSVkA9N+0RrdVI2H1th7nvjuyVCL2tKuHlckcnuTlFOF5mNNBt3p5MKSRNJT/FUBuO6fL1wcg6tZ7lC1AAAAAElFTkSuQmCC);
+  --image-4: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVHgBlVGxEYJAENyDhFALcDisgDLUjApsAStQK5AWrMBI0YwOtAJ5RnMJNWDO/1cJGJ15N7ud3bvdOeAN3pQ9/AGP85KjvCop8G/D/WXlbIR4KUBsBhFJeVelbsYOyKM5H67TLm+S8baMW50hiPwjBN2OiggnzdciiEGwJiLKzqPBjOw2HU8Tzv3k3vRtVDUJM4EsHX1KJVHddlTjcCFoIr1g/fMSoRC/SWzkbwL708B24pcDNR4ozKWP5gkOv0LMalEgpQAAAABJRU5ErkJggg==);
+  --image-5: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVHgBjZDBDYIwGIXfT7kYL2xgYQJG0IsJNzbQEdiAOIEr4AS9ifGibuAGVJ2j/W0VDIka+A5N2rz3/veX0CJVE2EargLDKbtr987gC2ArncUaPcgfSf0ombhwqgh/cMLKwmy6AJL7W0FEW4xDM8zCmwMXlWI8klio98Rjk5IVp7amS+Sd2+n8ESIovazv5hD5a0dZNxICkV7G119jksNdMSP/Mg728z8+EYoYc99IZ7P1E+GTPyQmOG56AAAAAElFTkSuQmCC);
+  --image-6: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF2SURBVHgBtZRPTsJAFMbfexDAHW6Ni6knwBOIMdG4Ek+g3gBOULyBNxBO4E50ZY/QG8yg7nVZFp3nzIRgpxFLW/gWTfqm/eV7/wZgKfEku7AFoX0czT5CBh67CEOMCLGGdKougwhKCq0z7DS+1pwrJhqri8MpbCgqOBeo9SSYvUvx+nkDmzh0fz3LAVAjRIZewccTnaQjdR18/wtc2bGNaUMfkAYIuM6RYkhPTX1VIdCDz6QwFbk14LAMdC0wC0agN9s/78BMAy8MNJd+UVPAuuBEH5uxmuas9GivGZZ26LudT/K1XaYebezQU6KHxkIMnqPGY3bLSgFtvZjSu1xYQIeGlYAOeh7Epp732RgiXlUGOiX6weT6212zEGYa+pWBLnWAyAsyDSoDnTR4Y4SEJ/WAizTKRYQDQw2Jl7lERrEKtJqiukPnhry142SxXwsIzP41RtCtB/xDtYCMLLLv2GrLrTqUZwfzmjXUZgVZ2a1h5hHsQj+iA4kiicCX1AAAAABJRU5ErkJggg==);
+  --image-7: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVHgBrZThDYQgDIU7AiM4EhvIJrqBbHK3iSMwAiPc8QgYQooU9CXvT5t+Qlsh4qWCTfAn2AX/ks8UW2lAOtgXkJadBHwIQLW3FmybgGUfNcw8gGXrEuheAKLvauZ0+Lht5MCKazACW9KtOOgXiXMCthDfJsTYYlsVSGDZzRXIhSOwCHSdq43A0D52KCVUCruGYuh+CFIYvAKIZfQ3UCksTjhLC4u6pytlH8B2amifgFnqyJCsb56qF0YCxkqVv6ZLMeQUV/QH1b8dsm1GEFYAAAAASUVORK5CYII=);
+  --image-8: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBnZWxbsIwEIbv3CJV6kJHIFKTJ2gGQEw0PEGzdqNvwNit9AlKngD1DejWTg2dUBBSurHVDIE1O1Lcc0JBCaYk/EMS+XyfL87vC4JCpmmVSyWwEcWdEGDSkL4J+YjAAcTI875eVbmYHWg2LTuKxJASy/C/OC3Yz4LP0rD2C1U0INgFHBctiLamXUMQLMZ7wHq9/UQTHqGw0CJomaAfW2CjYXWpqgGcLGxpmvEdBHyOCfD2B3Ybf6rC9RoNJqsrApNfOYrQUYRiZzBpDcgpCWMMO7OZ21NBKW4z+qp6Edhk4nLyqc7YfiFCiBtGd1OR7iQGVsNKJfEJ6m3S2X4lYjCduj0JkKACsFgSyNNloy0TJUCCisBI/jlV4Gf2MU4kQAySAzlh9Ha4wMQ2YqiIc/JVRz7kgSVA0cWkswhpbFUz4H9VH4cB97yxwXzfDclTDwfm6ZDb9KIvr/FZXq34vFIxrmiVFpwg2rtnqs7ZAjfQ92rVoBhYUEjokM22XSrVD5dL7tZqxoKg0uzHGmxIq98TLNWl8NDspKXFvwAddqeJJzbDt8tLGLmuG2bzfgFxCbNa0+B5cQAAAABJRU5ErkJggg==);
+  --image-9: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAXCAYAAADQpsWBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFCSURBVHgBhZRBTsMwEEVnEhZdlgMgHE5QbtAuy4ZyAuAInKDtETgB4gSwIhISIpyAnoBYRWLdZYRwBjtOK48TO7NwZHue/h/bEwQnzvLvJQCJGtSjnGcFBAJdgIBW+zlV6lheZbs+KDkkQX3DdkYwgUAcmUG8bBfm46xLqGATgpJ2vATuuQhZO0AIyKyYg4BIWCUi7j9irYHEUzkG7m0Xs2aVRsAhgihgoaqTJAahxgpyMHv7OY1CrSVWOP3+zQYh/Xw+3EV9T9eDkL6ZwlufirycRqH2RRdcLV1GIWtRrX012yrdQHeS5dt3k8wTcPU1P1n3KrVqt/7xmx7zFZmSCfFaTlCln9ANSaTu5EX2jD2bur/KBSbpg5YZ+3umo3uhBsxLgZDoGlEAL2GWhCB9DZKq+pyI7h1iE/vhdFRNrfv5P+SzeUq+/xpRAAAAAElFTkSuQmCC);
+  --image-10: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVHgBhVC7EcIwFJOchjILcCQbZITQcLSZAEZgA2AEJoANKFPCBpgFiNmAEor48eKj4JMEneWzfXqy3gMUyb6Kk7LK8QdUUUJGJwhipZVHPXZFemsTG12rIAylyDBQdsCo8MOFiLbNb10xchUcvt4dCetFzgYcgbSX6XDD0GB53RGcoQcCWZtwuvuF7kf0I+P7TSPNCbNs0v04S12wzeI1cy0wSu8QwbpJap94WjW1+qiYKwAAAABJRU5ErkJggg==);
+  --image-11: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHKSURBVHgBrVS9TuNAEP5mk9OljHTVSVc44nItviCdQnW5J8D3BuQJgCfAPAGhowOeAHgCQhVTYLbFUBgJiQrJHRCJHWZNjIwx5vcr7NnZmW88O5+XUALH7TW/4NojxXNgckFwrJ+ZNJGJQbQTHQZbZblUdEzNzHo15g0xm6iGEMMvEtfyi1+d7rIC1sVs4GXYgt637z9weXG+/4TQksnLfwVRUijYy5OmLbc73XkxNipIYmPQP9XBMHO0O7MDAi88RBj6H+nRjpqwLleRjQ3+5cnuczh5FKV41Q6zbr9Ols5zbAwMYx3E2fqn2+1RGs/ThZk6X+tXf+sEmkvTnoGknGX21MwfTzG2H3aKxW/RVyDjoAJs5TFBjZVbFSv6nFapcD8PDolcyvqNozBoVWW2f3f3iNAr+hXlWnoLFJUOMpEzJo03wnHdJpcogxhapmz2hdQr5mRHIY/+SRhsWlt8Pio0y4xNdWNubHCCjyMeo7GrYq0TY2gFH4WBH+thkv56p3o0kN628E7Ika1F+v4aU5kzOgrm30UqOSfhaDFbqvxeSgq8tv1ELoilSQ5KCVPSMPCVQYsML8rYnkhKpDG0Rcem0ToODwbF/TuME6pfO11PegAAAABJRU5ErkJggg==);
+  --image-12: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgB7VQ7TsNAEH2zFqIkR3BBEB0rJKSIyj4CJ+AIcIM4R+AGcIIcAdNZQoKlQ0DhG2DKEHmHN/lINImcgKh4xe56Zvx252lmBAvs+0EmDueiyCBIsQaqEiAaENur13AfzCa2HBwPhtyKRRSDJKwiEWgPKj0VXjhH8fJQjaTvT7y45FH587TdzetQNuiAQz9IY6JjknoXkTuSXJhj2upZVxLDc6jqz3aS27mlJI65eupS1nRgQ9QhNKYV9cmcPU2hH9gWUZ64ps7O1OcdP4TDL+Gf6C+IRPZmRCymWliU2BKq7D0WpVPFnRVl6rMeNoT1m7B5bRo4p7g2404yuU3p6EpiF7eJjGcfHCfLMVJwG86fipKpNgpZ3cDM4JscI46RQpa+vj+lM14y6ogCrtWMTV5zHpUx4uYtVKXZvgBzmn3pldBgvwAAAABJRU5ErkJggg==);
+  --image-13: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAECSURBVHgBjZBBTsMwEEX/uDQNbAg3CItULEfZELEp3IAbwA2gJwBu0COUE8ANCLsgROMtZeMjlF0IYowdyVWVTTuSPdafN+OZIexg4/z0yQKGgpDyeTJEcwmFCUArIquXH9VjxmdMSmoE+ISLVBRefE6vqGkFFwMIK1ijvLIBPrQSH/kjQlOvRS72h4PyS7/rvSwvrr1IsNPPxdtso+psnBeJ83dD5doD5q6yZR/5kf15f7BWmpA88ZciSwm2Gn13sCWU/hGp5raPjAajqw4VW3c+ZU4iFdeh79COS75x7t5vZLmojjt4l9UZXZk1HCxjtxlF7H44tILXX8TPRperEP8Hm9VdWWCuk7sAAAAASUVORK5CYII=);
+  --image-14: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEhSURBVHgBzVQxUsJQEH2bYRw7c4RvQcbyQ+O38wZ4A8cTyA0cT6DcAG7gDUxnbCStWPiPEDqHZt39AQkMjImx4BXJy2bz9u1mE+r2zx8INEQLMPiRkr5j/AOiTWUayWGCP6CzFsH44+0ltCjtFtLuLRqg4ojmPwx0gobYmJG6kpC44cbD71R4ETEuwzugZRWGDwUIcemU07IgWTmZnULi5mk2zW6Ud3vumQjmfZqd6nVi3d0CmPj81a/yk54bi/L1Lkd7Mcuz++3Ygr+GR3Q8EBrcRnWEzqwzMstPnWdiL6405vO8kGbTVU4tIY5YHzZLPljf4HkzIVD8W04toTo4PKHqZnshaQhCFxOx7laZRZaY7Z48sy3UCvJV8Agtob+fb7M/WcIkhHLBAAAAAElFTkSuQmCC);
+  --image-15: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAXCAYAAADQpsWBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgBlVRBTsMwENx1IgS38AEUwwfgB+0FEThAX1B4Afwg6UuAF8CJcswT+oNYau/NsRd7a1tNZTut264iWbvr2dnM2kaI2M3fYqxQVkDYEsqRKLgw8XQfIP9pMoXqCwA3X/Kpw0OTY3C8DfJpM4iCxIi3eqm9ILGXKMjuATlxfUR8tmsMZP4Lz5OlV2glL6NMpkVCEl7wDPKDQiChD2KQnaKegztIhdnpIKJbz1/BLArqhumYMOLEmTAZe+5m2CzCkiPBqxtTIL+jIM1SQthaweu9oOvpvAxZiLHKabMPIKAqZGmKK9452/tkzhm7SEsi+ggB+uAOvc5t9f/5u61O0BskJfJO3POZB7IqQdKEm3W5lpR8E4/8N0ylWsdshxyCmH4THnyGzph4sol6Wx1oou9Mr6WdZto0YsARtgZSHneqrGEwgQAAAABJRU5ErkJggg==);
+  --image-16: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACxSURBVHgBZZCxDcIwEEXv2xTQhQGQnE2gTAWMkBEyAWICRmAEoEoZmCAbEIsJUiKh8HNJEcXJNda33/07f7i8chB7FUoE4P5ONmcZFeL8U+i5Hd15SrPzSew7YWRenWPhblXUA7RNJkI/hcxqcepH9Er3MLAXUg5jit9mjaFFLbE0pfa4ASCzYQd/jGt1eMxGBRJST4DwF4DZB6/WlqEDGTr8f68A0IBSQp4ENSxJu7Batvc67gea1i0AAAAASUVORK5CYII=);
+  --custom-width: 100vw;
+  --design-width: 1440;
+  --ratio: calc(var(--custom-width) / var(--design-width));
+}
+
+/* Default classes */
+.pos-abs {
+  position: absolute;
+}
+.fill-parent {
+  width: 100%;
+  height: 100%;
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-auto {
+  background-size: auto;
+}
+.bg-crop {
+  background-size: 100% 100%;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.pos-init {
+  top: 0px;
+  left: 0px;
+}
+.image-div {
+  background-color: transparent;
+  background-position: center;
+}
+/* Default classes end */
+
+body {
+  margin: 0px 0px;
+  padding: 0px;
+}
+.parent-div {
+  position: relative;
+  width: var(--custom-width);
+  height: calc(3378 * var(--ratio));
+  overflow: hidden;
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.desktop-21204 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+  background: #f7feffff;
+}
+.logo-21327 {
+  width: 22.85%;
+  height: 2.86%;
+  top: 0.74%;
+  left: 4.58%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.logo-31664,
+.nav-bar-21206,
+.group-33-71765,
+.logo-112120,
+.logo-112121 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.nodeBg-31661 {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(148.11753304032726 * var(--ratio));
+  height: calc(69.08046668830384 * var(--ratio));
+  left: calc(-6.6204318526256 * var(--ratio));
+  top: calc(21.465825552303052 * var(--ratio));
+  object-fit: cover;
+  opacity: 1;
+}
+.image-10-31661 {
+  width: 22.59%;
+  height: 70.8%;
+  top: 14.6%;
+  left: 3.7%;
+  z-index: 1;
+  transform: rotate(-149.64deg);
+  overflow: hidden;
+}
+.logo-21252 {
+  width: 69.6%;
+  height: 36.26%;
+  top: 32.11%;
+  left: 30.4%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.suds-laundry-21253,
+.suds-laundry-se-31635,
+.suds-laundry-112122 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.suds-laundry-21253-0,
+.suds-laundry-112122-0 {
+  font-size: calc(35 * var(--ratio));
+
+  line-height: calc(35 * var(--ratio));
+
+  font-family: Grandstander;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #21b7e2ff;
+}
+.nav--top-21205 {
+  width: 100%;
+  height: 1.78%;
+  top: 1.18%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.group-1-21207 {
+  width: 49.24%;
+  height: 45%;
+  top: 26.67%;
+  left: 45.35%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.home-21208 {
+  width: 9.87%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.home-21208-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.how-it-works-21209 {
+  width: 19.46%;
+  height: 100%;
+  top: 0%;
+  left: 15.8%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.how-it-works-21209-0,
+.locations-21211-0,
+.contact-us-31562-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.locations-21211 {
+  width: 14.67%;
+  height: 100%;
+  top: 0%;
+  left: 63.19%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.contact-us-31562 {
+  width: 16.08%;
+  height: 100%;
+  top: 0%;
+  left: 83.92%;
+  z-index: 3;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.group-25-31627 {
+  width: 7.87%;
+  height: 46.67%;
+  top: 26.67%;
+  left: 65.63%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.services-21210 {
+  width: 77.98%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.services-21210-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.chevrondown-21212 {
+  width: 22.02%;
+  height: 85.71%;
+  top: 14.29%;
+  left: 77.98%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.nodeBg-I21212_23 {
+  opacity: 1;
+  background-image: var(--image-0);
+}
+.icon-I21212_23 {
+  width: 48.02%;
+  height: 28.33%;
+  top: 35.83%;
+  left: 25.99%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.bubbles-31692 {
+  width: 8.46%;
+  height: 4.46%;
+  top: 2.41%;
+  left: 85.25%;
+  z-index: 6;
+  transform: rotate(109.8deg);
+}
+.ellipse-12-31698 {
+  width: 27.91%;
+  height: 22.55%;
+  top: -13.87%;
+  left: -64.07%;
+  z-index: 5;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-14-31699 {
+  width: 20.52%;
+  height: 16.58%;
+  top: -12.38%;
+  left: -105.52%;
+  z-index: 6;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-13-31696 {
+  width: 22.17%;
+  height: 17.91%;
+  top: -11.72%;
+  left: -70.28%;
+  z-index: 3;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-15-31697 {
+  width: 22.17%;
+  height: 17.91%;
+  top: -7.03%;
+  left: -131.7%;
+  z-index: 4;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-19-31700 {
+  width: 20.52%;
+  height: 16.58%;
+  top: 9.35%;
+  left: -29.03%;
+  z-index: 7;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-11-31694 {
+  width: 57.47%;
+  height: 46.43%;
+  top: 10.86%;
+  left: -103.04%;
+  z-index: 1;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.nodeBg-31701 {
+  opacity: 1;
+  background-image: var(--image-1);
+}
+.ellipse-16-31701 {
+  width: 9.87%;
+  height: 5.88%;
+  top: 19.75%;
+  left: 66.45%;
+  z-index: 8;
+  transform: rotate(-109.8deg);
+  transform-origin: -16.45% 30.25%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.ellipse-18-31693 {
+  width: 45.15%;
+  height: 36.48%;
+  top: 21.37%;
+  left: -114.97%;
+  z-index: 0;
+  transform: rotate(109.8deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.nodeBg-31695 {
+  opacity: 1;
+  background-image: var(--image-2);
+}
+.ellipse-17-31695 {
+  width: 22.37%;
+  height: 7.9%;
+  top: 47.6%;
+  left: 42.99%;
+  z-index: 2;
+  transform: rotate(-109.8deg);
+  transform-origin: 7.01% 2.4%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.hero-31660 {
+  width: 46.39%;
+  height: 19.78%;
+  top: 4.23%;
+  left: 63.19%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.ellipse-10-31656 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  background: #d0f6ff80;
+}
+.nodeBg-31527 {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(524 * var(--ratio));
+  height: calc(524 * var(--ratio));
+  left: calc(0 * var(--ratio));
+  top: calc(0 * var(--ratio));
+  object-fit: cover;
+  opacity: 1;
+}
+.image-8-31527 {
+  width: 78.29%;
+  height: 78.29%;
+  top: 10.93%;
+  left: 10.93%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.focal-text-31628 {
+  width: 39.58%;
+  height: 15.39%;
+  top: 6.07%;
+  left: 5.56%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.rectangle-3-31637 {
+  width: 59.65%;
+  height: 7.69%;
+  top: 0%;
+  left: 0.35%;
+  z-index: 3;
+  transform: rotate(0deg);
+  border-radius: 20px;
+  background: #d0f6ffff;
+}
+.c-20-discount-for-31638 {
+  width: 52.98%;
+  height: 3.65%;
+  top: 2.12%;
+  left: 3.68%;
+  z-index: 4;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.c-20-discount-for-31638-0 {
+  font-size: calc(16 * var(--ratio));
+
+  line-height: calc(16 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.laundry-today-o-31636 {
+  width: 95.96%;
+  height: 26.92%;
+  top: 15%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.laundry-today-o-31636-0 {
+  font-size: calc(65 * var(--ratio));
+
+  line-height: calc(65 * var(--ratio));
+
+  font-family: Grandstander;
+  font-weight: 300;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #00334cff;
+}
+.consult-31632 {
+  width: 100%;
+  height: 8.46%;
+  top: 49.81%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.suds-laundry-se-31635-0 {
+  font-size: calc(18 * var(--ratio));
+  letter-spacing: calc(0.36 * var(--ratio));
+  line-height: calc(18 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #00334cff;
+}
+.start-31629 {
+  width: 69.82%;
+  height: 11.54%;
+  top: 67.31%;
+  left: 0.35%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.rectangle-2-31630 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 40px;
+  background: #d0f6ffff;
+  box-shadow: 0px 4px 10px 0px rgba(33, 183, 226, 0.30000001192092896);
+}
+.how-it-works-31631 {
+  width: 57.06%;
+  height: 46.67%;
+  top: 26.67%;
+  left: 21.39%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.how-it-works-31631-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.stats-31639 {
+  width: 69.12%;
+  height: 11.73%;
+  top: 88.27%;
+  left: 0.35%;
+  z-index: 5;
+  transform: rotate(0deg);
+}
+.group-2-31640 {
+  width: 48.22%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.c-18m-31642 {
+  width: 55.26%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.c-18m-31642-0,
+.c-10-31645-0 {
+  font-size: calc(50 * var(--ratio));
+
+  line-height: calc(50 * var(--ratio));
+
+  font-family: Rasa;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.happy-customers-31641 {
+  width: 39.47%;
+  height: 55.74%;
+  top: 19.67%;
+  left: 60.53%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.happy-customers-31641-0,
+.years-of-experi-31644-0 {
+  font-size: calc(14 * var(--ratio));
+
+  line-height: calc(14 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #489fb5ff;
+}
+.group-3-31643 {
+  width: 38.07%;
+  height: 100%;
+  top: 0%;
+  left: 61.93%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.c-10-31645 {
+  width: 44%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.years-of-experi-31644 {
+  width: 50.67%;
+  height: 55.74%;
+  top: 19.67%;
+  left: 49.33%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.bubbles-31678 {
+  width: 11.73%;
+  height: 6.59%;
+  top: 18.95%;
+  left: 64.81%;
+  z-index: 4;
+  transform: rotate(-22.53deg);
+}
+.ellipse-11-31666 {
+  width: 41.45%;
+  height: 31.44%;
+  top: -14.79%;
+  left: 30.43%;
+  z-index: 1;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-18-31677 {
+  width: 32.57%;
+  height: 24.7%;
+  top: -3.79%;
+  left: 43.85%;
+  z-index: 0;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-12-31667 {
+  width: 20.13%;
+  height: 15.27%;
+  top: 0.23%;
+  left: 5.13%;
+  z-index: 6;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-13-31668 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 5.55%;
+  left: 11.5%;
+  z-index: 3;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.nodeBg-31675 {
+  opacity: 1;
+  background-image: var(--image-3);
+}
+.ellipse-17-31675 {
+  width: 9.67%;
+  height: 11.13%;
+  top: 17.19%;
+  left: 16.08%;
+  z-index: 2;
+  transform: rotate(22.53deg);
+  transform-origin: 33.92% 32.81%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.ellipse-14-31669 {
+  width: 14.81%;
+  height: 11.23%;
+  top: 21.19%;
+  left: 28.73%;
+  z-index: 7;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.nodeBg-31673 {
+  opacity: 1;
+  background-image: var(--image-4);
+}
+.ellipse-16-31673 {
+  width: 7.56%;
+  height: 3.35%;
+  top: 27.75%;
+  left: -10.58%;
+  z-index: 8;
+  transform: rotate(22.53deg);
+  transform-origin: 60.58% 22.25%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.ellipse-15-31670 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 28.25%;
+  left: 44.43%;
+  z-index: 4;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-19-31691 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 53.98%;
+  left: 124.45%;
+  z-index: 5;
+  transform: rotate(-22.53deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.bubbles-31679 {
+  width: 8.46%;
+  height: 4.46%;
+  top: 20.96%;
+  left: 70.38%;
+  z-index: 5;
+  transform: rotate(150.27deg);
+}
+.ellipse-15-31684 {
+  width: 22.17%;
+  height: 17.91%;
+  top: -70.75%;
+  left: -104.38%;
+  z-index: 4;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-14-31686 {
+  width: 20.52%;
+  height: 16.58%;
+  top: -61.36%;
+  left: -79.43%;
+  z-index: 6;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-13-31683 {
+  width: 22.17%;
+  height: 17.91%;
+  top: -42.11%;
+  left: -53.89%;
+  z-index: 3;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-12-31685 {
+  width: 27.91%;
+  height: 22.55%;
+  top: -39.53%;
+  left: -49.99%;
+  z-index: 5;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-18-31680 {
+  width: 45.15%;
+  height: 36.48%;
+  top: -36.56%;
+  left: -124.68%;
+  z-index: 0;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-11-31681 {
+  width: 57.47%;
+  height: 46.43%;
+  top: -36.26%;
+  left: -112.63%;
+  z-index: 1;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-19-31690 {
+  width: 20.52%;
+  height: 16.58%;
+  top: -4.72%;
+  left: -38.71%;
+  z-index: 7;
+  transform: rotate(150.27deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.nodeBg-31687 {
+  opacity: 1;
+  background-image: var(--image-5);
+}
+.ellipse-16-31687 {
+  width: 10.72%;
+  height: 4.5%;
+  top: 37.93%;
+  left: 82.76%;
+  z-index: 8;
+  transform: rotate(-150.27deg);
+  transform-origin: -32.76% 12.07%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.nodeBg-31682 {
+  opacity: 1;
+  background-image: var(--image-6);
+}
+.ellipse-17-31682 {
+  width: 15.11%;
+  height: 15.36%;
+  top: 46.35%;
+  left: 43.77%;
+  z-index: 2;
+  transform: rotate(-150.27deg);
+  transform-origin: 6.23% 3.65%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.steps-71746 {
+  width: 100%;
+  height: 17.76%;
+  top: 26.35%;
+  left: 0%;
+  z-index: 7;
+  transform: rotate(0deg);
+}
+.bg-21345,
+.rectangle-67-112118 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  background: #d0f6ffff;
+}
+.header-71747 {
+  width: 51.04%;
+  height: 18.33%;
+  top: 6.67%;
+  left: 24.44%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.how-it-works-51707 {
+  width: 26.53%;
+  height: 28.18%;
+  top: 0%;
+  left: 36.73%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.how-it-works-51707-0,
+.services-21257-0 {
+  font-size: calc(25 * var(--ratio));
+
+  line-height: calc(25 * var(--ratio));
+
+  font-family: Grandstander;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  color: #21b7e2ff;
+}
+.get-it-done-in--51708 {
+  width: 100%;
+  height: 59.09%;
+  top: 40.91%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.get-it-done-in--51708-0,
+.services--packa-21258-0 {
+  font-size: calc(60 * var(--ratio));
+
+  line-height: calc(60 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.cards-51706 {
+  width: 77.85%;
+  height: 57.59%;
+  top: 36.67%;
+  left: 11.04%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.step-1-71766 {
+  width: 24.53%;
+  height: 92.88%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.rectangle-56-51702 {
+  width: 80%;
+  height: 100%;
+  top: 0%;
+  left: 9.82%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 20px;
+  background: #ffffffff;
+  box-sizing: border-box;
+  border-left: 3px solid #ffffffff;
+  border-right: 3px solid #ffffffff;
+  border-top: 3px solid #ffffffff;
+  border-bottom: 3px solid #ffffffff;
+}
+.group-29-71752 {
+  width: 100%;
+  height: 21.81%;
+  top: 7.79%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.step-1-71753,
+.step-2-71757,
+.step-3-71760,
+.step-4-71763 {
+  width: 26.53%;
+  height: 44.29%;
+  top: 0%;
+  left: 36.73%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.step-1-71753-0,
+.step-2-71757-0,
+.step-3-71760-0,
+.step-4-71763-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Grandstander;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  color: #21b7e2ff;
+}
+.pickup-71754,
+.wash--dry-71758,
+.fold-71761,
+.delivery-71764 {
+  width: 100%;
+  height: 55.71%;
+  top: 44.29%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.pickup-71754-0,
+.wash--dry-71758-0,
+.fold-71761-0,
+.delivery-71764-0 {
+  font-size: calc(30 * var(--ratio));
+
+  line-height: calc(30 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.nodeBg-71744,
+.nodeBg-71741,
+.nodeBg-92066,
+.nodeBg-92001,
+.nodeBg-91956,
+.nodeBg-112178 {
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  opacity: 1;
+}
+.addressbro-1-71744 {
+  width: 72.73%;
+  height: 66.67%;
+  top: 26%;
+  left: 13.45%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.step-2-71767 {
+  width: 24.53%;
+  height: 100%;
+  top: 0%;
+  left: 25.16%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.rectangle-60-51710 {
+  width: 80%;
+  height: 92.88%;
+  top: 0%;
+  left: 9.09%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 20px;
+  background: #ffffffff;
+  box-sizing: border-box;
+  border-left: 3px solid #ffffffff;
+  border-right: 3px solid #ffffffff;
+  border-top: 3px solid #ffffffff;
+  border-bottom: 3px solid #ffffffff;
+}
+.nodeBg-71736 {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(300.99999105930357 * var(--ratio));
+  height: calc(321.9288635253906 * var(--ratio));
+  left: calc(0 * var(--ratio));
+  top: calc(0 * var(--ratio));
+  object-fit: cover;
+  opacity: 1;
+}
+.laundry-and-dry-71736 {
+  width: 72.73%;
+  height: 92.88%;
+  top: 7.12%;
+  left: 12.73%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.group-30-71756,
+.group-31-71759 {
+  width: 100%;
+  height: 20.26%;
+  top: 7.24%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.step-3-71768 {
+  width: 24.53%;
+  height: 100%;
+  top: 0%;
+  left: 50.31%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.rectangle-61-51711 {
+  width: 80%;
+  height: 92.88%;
+  top: 0%;
+  left: 10.18%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 20px;
+  background: #ffffffff;
+  box-sizing: border-box;
+  border-left: 3px solid #ffffffff;
+  border-right: 3px solid #ffffffff;
+  border-top: 3px solid #ffffffff;
+  border-bottom: 3px solid #ffffffff;
+}
+.nodeBg-71738 {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(300.99995082617613 * var(--ratio));
+  height: calc(321.9288635253906 * var(--ratio));
+  left: calc(-91.99998658895711 * var(--ratio));
+  top: calc(-5.300001376596015e-13 * var(--ratio));
+  object-fit: cover;
+  opacity: 1;
+}
+.laundry-and-dry-71738 {
+  width: 75.64%;
+  height: 92.88%;
+  top: 7.12%;
+  left: 13.82%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.step-4-71769 {
+  width: 24.53%;
+  height: 94.43%;
+  top: 0%;
+  left: 75.47%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.rectangle-62-51712 {
+  width: 80%;
+  height: 98.36%;
+  top: 0%;
+  left: 10.18%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 20px;
+  background: #ffffffff;
+  box-sizing: border-box;
+  border-left: 3px solid #ffffffff;
+  border-right: 3px solid #ffffffff;
+  border-top: 3px solid #ffffffff;
+  border-bottom: 3px solid #ffffffff;
+}
+.group-32-71762 {
+  width: 100%;
+  height: 21.45%;
+  top: 7.66%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.messengerbro-1-71741 {
+  width: 90.91%;
+  height: 81.97%;
+  top: 18.03%;
+  left: 4.73%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.services-71775 {
+  width: 85.56%;
+  height: 23.74%;
+  top: 45.89%;
+  left: 7.22%;
+  z-index: 8;
+  transform: rotate(0deg);
+}
+.header-71770 {
+  width: 59.66%;
+  height: 13.34%;
+  top: 0%;
+  left: 18.99%;
+  z-index: 0;
+  transform: rotate(0deg);
+}
+.services-21257 {
+  width: 26.53%;
+  height: 28.97%;
+  top: 0%;
+  left: 36.73%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.services--packa-21258 {
+  width: 100%;
+  height: 60.75%;
+  top: 39.25%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.cards-71868 {
+  width: 100%;
+  height: 76.31%;
+  top: 23.69%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.pricing-card-92065 {
+  width: 31.17%;
+  height: 93.46%;
+  top: 0%;
+  left: 34.42%;
+  z-index: 2;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 20px;
+  background: #d0f6ffff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.20000000298023224);
+}
+.image-12-1-1-92066 {
+  width: 13.02%;
+  height: 8.74%;
+  top: 3.32%;
+  left: 6.25%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.title-92067 {
+  width: 48.96%;
+  height: 6.99%;
+  top: 5.24%;
+  left: 21.35%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.title-92067-0,
+.title-91986-0,
+.title-91957-0 {
+  font-size: calc(30 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Grandstander;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  color: #21b7e2ff;
+}
+.title-92068 {
+  width: 76.56%;
+  height: 6.99%;
+  top: 9.97%;
+  left: 21.35%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.title-92068-0,
+.title-92002-0,
+.title-91958-0 {
+  font-size: calc(12 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.list-of-items-92069 {
+  width: 73.18%;
+  height: 39.16%;
+  top: 16.78%;
+  left: 6.25%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.whats-included-92070 {
+  width: 100%;
+  height: 14.29%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.whats-included-92070-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #00000080;
+}
+.list-92071 {
+  width: 100%;
+  height: 10.71%;
+  top: 25%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.bxscheckcircle--92072,
+.bxscheckcircle--92076,
+.bxscheckcircle--92080,
+.bxscheckcircle--92084 {
+  width: 8.54%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-92073,
+.nodeBg-92077,
+.nodeBg-92081,
+.nodeBg-92085 {
+  opacity: 1;
+  background-image: var(--image-7);
+}
+.vector-92073,
+.vector-92077,
+.vector-92081,
+.vector-92085,
+.vector-91991,
+.vector-91995,
+.vector-91963,
+.vector-91967,
+.vector-91971,
+.vector-91975,
+.vector-91979,
+.vector-I21324_15182 {
+  width: 83.33%;
+  height: 83.33%;
+  top: 8.33%;
+  left: 8.33%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.c-4-loads-per-wee-92074 {
+  width: 88.61%;
+  height: 91.67%;
+  top: 0%;
+  left: 11.39%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.c-4-loads-per-wee-92074-0,
+.up-to-12-lbs-pe-92078-0,
+.special-garment-92082-0,
+.pickup--drop-of-92086-0 {
+  font-size: calc(18 * var(--ratio));
+
+  line-height: calc(18 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.list-92075 {
+  width: 100%;
+  height: 10.71%;
+  top: 46.43%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.up-to-12-lbs-pe-92078,
+.special-garment-92082,
+.pickup--drop-of-92086 {
+  width: 113.88%;
+  height: 91.67%;
+  top: 0%;
+  left: 11.39%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.list-92079 {
+  width: 100%;
+  height: 10.71%;
+  top: 67.86%;
+  left: 0%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.list-92083 {
+  width: 100%;
+  height: 10.71%;
+  top: 89.29%;
+  left: 0%;
+  z-index: 4;
+  transform: rotate(0deg);
+}
+.divider-92090 {
+  width: 87.5%;
+  height: 0%;
+  top: 62.24%;
+  left: 6.25%;
+  z-index: 6;
+  transform: rotate(0deg);
+  box-shadow:
+    inset 0 0 0 0.5px #a9a9aaff,
+    inset 0 0 0.5px 0 #a9a9aaff,
+    inset 0 0.5px 0 0 #a9a9aaff,
+    inset 0.5px 0 0 0 #a9a9aaff;
+  border-left: 0px solid #a9a9aaff;
+  border-right: 0px solid #a9a9aaff;
+  border-top: 0px solid #a9a9aaff;
+  border-bottom: 0px solid #a9a9aaff;
+}
+.pricing-92087 {
+  width: 87.5%;
+  height: 6.99%;
+  top: 73.43%;
+  left: 6.25%;
+  z-index: 4;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.pricing-92087-0 {
+  font-size: calc(32 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.pricing-92087-1 {
+  font-size: calc(18 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.primary-button-92088 {
+  width: 91.67%;
+  height: 11.19%;
+  top: 84.62%;
+  left: 4.17%;
+  z-index: 5;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 40px;
+  background: #21b7e2ff;
+}
+.button-label-92089,
+.button-label-91999,
+.button-label-91983 {
+  width: 100%;
+  height: 62.5%;
+  top: 18.75%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.button-label-92089-0,
+.button-label-91999-0,
+.button-label-91983-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #000000ff;
+}
+.pricing-card-4-91985 {
+  width: 32.47%;
+  height: 93.46%;
+  top: 6.54%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 20px 0;
+  background: #ffffffff;
+}
+.image-13-1-1-92001 {
+  width: 13.5%;
+  height: 8.04%;
+  top: 4.2%;
+  left: 4.75%;
+  z-index: 5;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.title-91986 {
+  width: 43.5%;
+  height: 6.99%;
+  top: 5.24%;
+  left: 19%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.title-92002 {
+  width: 73.5%;
+  height: 6.99%;
+  top: 9.79%;
+  left: 19%;
+  z-index: 6;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.list-of-items-91987 {
+  width: 88%;
+  height: 22.38%;
+  top: 16.78%;
+  left: 6%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.whats-included-91988 {
+  width: 50.57%;
+  height: 25%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.whats-included-91988-0,
+.whats-included-91960-0 {
+  font-size: calc(22 * var(--ratio));
+
+  line-height: calc(22 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #a9a9aaff;
+}
+.list-91989 {
+  width: 100%;
+  height: 18.75%;
+  top: 43.75%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.bxscheckcircle--91990,
+.bxscheckcircle--91994,
+.bxscheckcircle--91962,
+.bxscheckcircle--91966,
+.bxscheckcircle--91970,
+.bxscheckcircle--91974,
+.bxscheckcircle--91978 {
+  width: 6.82%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+
+.nodeBg-91991,
+.nodeBg-91995,
+.nodeBg-91963,
+.nodeBg-91967,
+.nodeBg-91971,
+.nodeBg-91975,
+.nodeBg-91979 {
+  opacity: 1;
+  background-image: var(--image-8);
+}
+.c-2-loads-per-wee-91992,
+.up-to-10-lbs-pe-91996,
+.c-6-loads-per-wee-91964,
+.up-to-15-lbs-pe-91968,
+.special-garment-91972,
+.pickup--drop-of-91976,
+.free-detergent--91980 {
+  width: 90.91%;
+  height: 91.67%;
+  top: 0%;
+  left: 9.09%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.c-2-loads-per-wee-91992-0,
+.up-to-10-lbs-pe-91996-0,
+.c-6-loads-per-wee-91964-0,
+.up-to-15-lbs-pe-91968-0,
+.special-garment-91972-0,
+.pickup--drop-of-91976-0,
+.free-detergent--91980-0 {
+  font-size: calc(18 * var(--ratio));
+
+  line-height: calc(18 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #35353fff;
+}
+.list-91993 {
+  width: 100%;
+  height: 18.75%;
+  top: 81.25%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.divider-92000 {
+  width: 88%;
+  height: 0%;
+  top: 45.45%;
+  left: 6%;
+  z-index: 4;
+  transform: rotate(0deg);
+  box-shadow:
+    inset 0 0 0 0.5px #a9a9aaff,
+    inset 0 0 0.5px 0 #a9a9aaff,
+    inset 0 0.5px 0 0 #a9a9aaff,
+    inset 0.5px 0 0 0 #a9a9aaff;
+  border-left: 0px solid #a9a9aaff;
+  border-right: 0px solid #a9a9aaff;
+  border-top: 0px solid #a9a9aaff;
+  border-bottom: 0px solid #a9a9aaff;
+}
+.pricing-91997 {
+  width: 88%;
+  height: 6.99%;
+  top: 73.43%;
+  left: 6%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.pricing-91997-0,
+.pricing-91981-0 {
+  font-size: calc(32 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #0b0914ff;
+}
+.pricing-91997-1,
+.pricing-91981-1 {
+  font-size: calc(20 * var(--ratio));
+
+  line-height: calc(40 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #0b0914ff;
+}
+.primary-button-91998 {
+  width: 88%;
+  height: 11.19%;
+  top: 84.62%;
+  left: 6%;
+  z-index: 3;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 40px;
+  background: #d0f6ffff;
+}
+.pricing-card-3-91955 {
+  width: 32.47%;
+  height: 93.46%;
+  top: 6.54%;
+  left: 67.53%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 0px 20;
+  background: #ffffffff;
+}
+.image-11-1-1-91956 {
+  width: 12.5%;
+  height: 8.74%;
+  top: 3.32%;
+  left: 5%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.title-91957 {
+  width: 43%;
+  height: 6.99%;
+  top: 5.07%;
+  left: 19%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.title-91958 {
+  width: 73.5%;
+  height: 6.99%;
+  top: 9.79%;
+  left: 19%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.list-of-items-91959 {
+  width: 88%;
+  height: 47.55%;
+  top: 16.78%;
+  left: 6%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.whats-included-91960 {
+  width: 52.56%;
+  height: 11.76%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.list-91961 {
+  width: 100%;
+  height: 8.82%;
+  top: 20.59%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.list-91965 {
+  width: 100%;
+  height: 8.82%;
+  top: 38.24%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.list-91969 {
+  width: 100%;
+  height: 8.82%;
+  top: 55.88%;
+  left: 0%;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+.list-91973 {
+  width: 100%;
+  height: 8.82%;
+  top: 73.53%;
+  left: 0%;
+  z-index: 4;
+  transform: rotate(0deg);
+}
+.list-91977 {
+  width: 100%;
+  height: 8.82%;
+  top: 91.18%;
+  left: 0%;
+  z-index: 5;
+  transform: rotate(0deg);
+}
+.divider-91984 {
+  width: 88%;
+  height: 0%;
+  top: 70.63%;
+  left: 6%;
+  z-index: 6;
+  transform: rotate(0deg);
+  box-shadow:
+    inset 0 0 0 0.5px #a9a9aaff,
+    inset 0 0 0.5px 0 #a9a9aaff,
+    inset 0 0.5px 0 0 #a9a9aaff,
+    inset 0.5px 0 0 0 #a9a9aaff;
+  border-left: 0px solid #a9a9aaff;
+  border-right: 0px solid #a9a9aaff;
+  border-top: 0px solid #a9a9aaff;
+  border-bottom: 0px solid #a9a9aaff;
+}
+.pricing-91981 {
+  width: 88%;
+  height: 6.99%;
+  top: 73.43%;
+  left: 6%;
+  z-index: 4;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.primary-button-91982 {
+  width: 88%;
+  height: 11.19%;
+  top: 84.62%;
+  left: 6%;
+  z-index: 5;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 40px;
+  background: #d0f6ffff;
+}
+.foot-image-112163 {
+  width: 88.89%;
+  height: 14.8%;
+  top: 71.97%;
+  left: 5.56%;
+  z-index: 10;
+  transform: rotate(0deg);
+}
+.thinking-facebr-112178 {
+  width: 39.06%;
+  height: 100%;
+  top: 0%;
+  left: 5.08%;
+  z-index: 2;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.rectangle-48-112164 {
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 120px;
+  background: #d0f6ffff;
+}
+.group-19-112165 {
+  width: 44.14%;
+  height: 52.6%;
+  top: 33.8%;
+  left: 48.28%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.hard-time-decid-112166 {
+  width: 100%;
+  height: 61.6%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.hard-time-decid-112166-0 {
+  font-size: calc(60 * var(--ratio));
+  letter-spacing: calc(1.2 * var(--ratio));
+  line-height: calc(60 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.group-18-112167 {
+  width: 38.94%;
+  height: 22.81%;
+  top: 77.19%;
+  left: 29.73%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.rectangle-49-112168 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  border-radius: 120px;
+  background: #ffffffff;
+}
+.learn-more-112169 {
+  width: 47.73%;
+  height: 41.67%;
+  top: 28.33%;
+  left: 25.91%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.learn-more-112169-0 {
+  font-size: calc(20 * var(--ratio));
+
+  line-height: calc(20 * var(--ratio));
+
+  font-family: Outfit;
+  font-weight: 600;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.footer-112157 {
+  width: 100%;
+  height: 8.35%;
+  top: 91.65%;
+  left: 0%;
+  z-index: 9;
+  transform: rotate(0deg);
+}
+.bubbles-112135 {
+  width: 9.28%;
+  height: 62.48%;
+  top: 14.41%;
+  left: 15.09%;
+  z-index: 2;
+  transform: rotate(-11.62deg);
+}
+.ellipse-11-112137 {
+  width: 41.45%;
+  height: 31.44%;
+  top: -7.47%;
+  left: 29.27%;
+  z-index: 1;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-12-112142 {
+  width: 20.13%;
+  height: 15.27%;
+  top: 2.27%;
+  left: 2.89%;
+  z-index: 6;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-18-112136 {
+  width: 32.57%;
+  height: 24.7%;
+  top: 4.68%;
+  left: 40.63%;
+  z-index: 0;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-13-112139 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 8.14%;
+  left: 8.25%;
+  z-index: 3;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.nodeBg-112138 {
+  opacity: 1;
+  background-image: var(--image-9);
+}
+.ellipse-17-112138 {
+  width: 8.53%;
+  height: 12.43%;
+  top: 12.88%;
+  left: 23.63%;
+  z-index: 2;
+  transform: rotate(11.62deg);
+  transform-origin: 26.37% 37.12%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.nodeBg-112144 {
+  opacity: 1;
+  background-image: var(--image-10);
+}
+.ellipse-16-112144 {
+  width: 7.77%;
+  height: 4.35%;
+  top: 19.38%;
+  left: -4.49%;
+  z-index: 8;
+  transform: rotate(11.62deg);
+  transform-origin: 54.49% 30.62%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.ellipse-14-112143 {
+  width: 14.81%;
+  height: 11.23%;
+  top: 25.89%;
+  left: 21.39%;
+  z-index: 7;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-15-112140 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 35.16%;
+  left: 34.92%;
+  z-index: 4;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-19-112141 {
+  width: 15.99%;
+  height: 12.13%;
+  top: 71.9%;
+  left: 107.07%;
+  z-index: 5;
+  transform: rotate(-11.62deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.nav--b-text-21307 {
+  width: 40.56%;
+  height: 61.35%;
+  top: 17.38%;
+  left: 53.89%;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.about-us-21308 {
+  width: 13.87%;
+  height: 12.72%;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.about-us-21308-0,
+.company-21321-0,
+.services-21322-0,
+.check-us-out-21323-0 {
+  font-size: calc(18 * var(--ratio));
+
+  line-height: calc(18 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.about-us-21308-1 {
+  font-size: calc(18 * var(--ratio));
+  letter-spacing: calc(0.36 * var(--ratio));
+  line-height: calc(18 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.company-21321 {
+  width: 14.55%;
+  height: 12.72%;
+  top: 0%;
+  left: 25.17%;
+  z-index: 12;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.services-21322 {
+  width: 13.36%;
+  height: 12.72%;
+  top: 0%;
+  left: 53.77%;
+  z-index: 13;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.check-us-out-21323 {
+  width: 19.86%;
+  height: 12.72%;
+  top: 0%;
+  left: 80.14%;
+  z-index: 14;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.iconfacebook-21324 {
+  width: 4.11%;
+  height: 13.87%;
+  top: 27.17%;
+  left: 80.14%;
+  z-index: 15;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-I21324_15182 {
+  opacity: 1;
+  background-image: var(--image-11);
+}
+.iconinstagram-21325 {
+  width: 4.11%;
+  height: 13.87%;
+  top: 27.17%;
+  left: 87.67%;
+  z-index: 16;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-I21325_15176 {
+  opacity: 1;
+  background-image: var(--image-12);
+}
+.vector-I21325_15176,
+.vector-I21326_2358 {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-I21325_15177 {
+  opacity: 1;
+  background-image: var(--image-13);
+}
+.vector-I21325_15177 {
+  width: 44.16%;
+  height: 43.46%;
+  top: 25.82%;
+  left: 30.73%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.iconlinkedin-21326 {
+  width: 4.11%;
+  height: 13.87%;
+  top: 27.17%;
+  left: 95.21%;
+  z-index: 17;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-I21326_2358 {
+  opacity: 1;
+  background-image: var(--image-14);
+}
+.about-us-21309 {
+  width: 11.99%;
+  height: 10.98%;
+  top: 28.32%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.about-us-21309-0,
+.our-team-21313-0,
+.pickup-21318-0,
+.creators-21310-0,
+.terms-21314-0,
+.drop-off-21319-0,
+.philosophy-21311-0,
+.how-it-works-21315-0,
+.laundry-21320-0,
+.contact-us-21312-0,
+.blog-21316-0 {
+  font-size: calc(16 * var(--ratio));
+
+  line-height: calc(16 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.about-us-21309-1 {
+  font-size: calc(16 * var(--ratio));
+  letter-spacing: calc(0.32 * var(--ratio));
+  line-height: calc(16 * var(--ratio));
+
+  font-family: Inter;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre-wrap;
+  color: #263238ff;
+}
+.our-team-21313 {
+  width: 12.16%;
+  height: 10.98%;
+  top: 28.32%;
+  left: 25.17%;
+  z-index: 5;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.pickup-21318 {
+  width: 8.9%;
+  height: 10.98%;
+  top: 28.32%;
+  left: 53.77%;
+  z-index: 9;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.creators-21310 {
+  width: 11.47%;
+  height: 10.98%;
+  top: 48.55%;
+  left: 0%;
+  z-index: 2;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.terms-21314 {
+  width: 8.22%;
+  height: 10.98%;
+  top: 48.55%;
+  left: 25.17%;
+  z-index: 6;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.drop-off-21319 {
+  width: 10.79%;
+  height: 10.98%;
+  top: 48.55%;
+  left: 53.77%;
+  z-index: 10;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.philosophy-21311 {
+  width: 14.38%;
+  height: 10.98%;
+  top: 68.79%;
+  left: 0%;
+  z-index: 3;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.how-it-works-21315 {
+  width: 17.12%;
+  height: 10.98%;
+  top: 68.79%;
+  left: 25.17%;
+  z-index: 7;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.laundry-21320 {
+  width: 10.79%;
+  height: 10.98%;
+  top: 68.79%;
+  left: 53.77%;
+  z-index: 11;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.contact-us-21312 {
+  width: 14.38%;
+  height: 10.98%;
+  top: 89.02%;
+  left: 0%;
+  z-index: 4;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.blog-21316 {
+  width: 5.82%;
+  height: 10.98%;
+  top: 89.02%;
+  left: 25.17%;
+  z-index: 8;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.bubbles-112145 {
+  width: 6.78%;
+  height: 32.15%;
+  top: 36.4%;
+  left: 10.75%;
+  z-index: 3;
+  transform: rotate(-154.38deg);
+}
+.ellipse-18-112146 {
+  width: 45.15%;
+  height: 48.6%;
+  top: -128.59%;
+  left: -61.99%;
+  z-index: 0;
+  transform: rotate(-154.38deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-11-112147 {
+  width: 57.47%;
+  height: 61.86%;
+  top: -115.11%;
+  left: -63.16%;
+  z-index: 1;
+  transform: rotate(-154.38deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-13-112149 {
+  width: 22.17%;
+  height: 23.86%;
+  top: -74.95%;
+  left: -1.68%;
+  z-index: 3;
+  transform: rotate(-154.38deg);
+  border-radius: 50%;
+  background: #d0f6ffff;
+}
+.ellipse-12-112151 {
+  width: 27.91%;
+  height: 30.05%;
+  top: -68.34%;
+  left: -5.68%;
+  z-index: 4;
+  transform: rotate(-154.38deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.ellipse-19-112153 {
+  width: 20.52%;
+  height: 22.09%;
+  top: -33.52%;
+  left: -30.08%;
+  z-index: 5;
+  transform: rotate(-154.38deg);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid #21b7e2ff;
+  border-right: 4px solid #21b7e2ff;
+  border-top: 4px solid #21b7e2ff;
+  border-bottom: 4px solid #21b7e2ff;
+}
+.nodeBg-112148 {
+  opacity: 1;
+  background-image: var(--image-15);
+}
+.ellipse-17-112148 {
+  width: 11.83%;
+  height: 24.37%;
+  top: 26.98%;
+  left: 48.08%;
+  z-index: 2;
+  transform: rotate(154.38deg);
+  transform-origin: 1.92% 23.02%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.nodeBg-112154 {
+  opacity: 1;
+  background-image: var(--image-16);
+}
+.ellipse-16-112154 {
+  width: 7.59%;
+  height: 11.87%;
+  top: 55.66%;
+  left: 84.42%;
+  z-index: 6;
+  transform: rotate(154.38deg);
+  transform-origin: -34.42% -5.66%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.logo-112119 {
+  width: 15.9%;
+  height: 12.41%;
+  top: 43.97%;
+  left: 18.75%;
+  z-index: 4;
+  transform: rotate(0deg);
+}
+
+
+</style>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parent-div">
+      <div class="desktop-21204 pos-abs">
+        <!-- Logo1 -->
+        <section class="logo-21327 pos-abs">
+          <div class="logo-31664 pos-abs">
+            <div class="image-10-31661 pos-abs">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/f65f/6ad7/effac3c5e9ed8303f93dc30d9e2b0b33?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dQPlVbWEoEfYU9nUcku0M2niiUZgDlGkbA-Yi9fA3aw3n-iQs7cXea4ixR7Vq1TZ4~HyAVZmkG4zZHWnAE6oQ6hSH9clK7UMo3frffZFvP9gjCotOM7N-Pookc9dbMbSfad4QMeZemCi~w2Ykrc3Drq68L7WGL~M-vxqm~eX8dfc1kKjZieHNo1t0mF1gUzuqv1LMmUvN53Ha2jZXjDhhy~WfZI49JK-31-uRY-OXZC0exN2FSZ1qrdKkXO6Oa6LNm8QJgB6JZqoTGSpICQNq31IykVX2UN8ntJ379xfrlgCMgxWIXhk~8hj9wQKgBibYcgb6hRrMfMuVFVd3XGU0w__"
+                class="pos-abs image-div bg-no-repeat bg-crop nodeBg-31661"
+                alt="31661-ALT"
+              />
+            </div>
+
+            <div class="logo-21252 pos-abs">
+              <div class="suds-laundry-21253 pos-abs">
+                 <span class="suds-laundry-21253-0">Hyginiee</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Nav - top1 -->
+        <section class="nav--top-21205 pos-abs">
+          <div class="nav-bar-21206 pos-abs">
+            <div class="group-1-21207 pos-abs">
+              <div class="home-21208 pos-abs">
+                 <span class="home-21208-0">Home</span>
+              </div>
+
+              <div class="how-it-works-21209 pos-abs">
+                 <span class="how-it-works-21209-0">How it works</span>
+              </div>
+
+              <div class="locations-21211 pos-abs">
+                 <span class="locations-21211-0">Locations</span>
+              </div>
+
+              <div class="contact-us-31562 pos-abs">
+                 <span class="contact-us-31562-0">Contact us</span>
+              </div>
+            </div>
+
+            <div class="group-25-31627 pos-abs">
+              <div class="services-21210 pos-abs">
+                 <span class="services-21210-0">Services</span>
+              </div>
+
+              <div class="chevrondown-21212 pos-abs">
+                <div class="icon-I21212_23 pos-abs">
+                  <div
+                    class="nodeBg-I21212_23 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bubbles3 -->
+        <section class="bubbles-31692 pos-abs">
+          <div class="ellipse-12-31698 pos-abs"></div>
+
+          <div class="ellipse-14-31699 pos-abs"></div>
+
+          <div class="ellipse-13-31696 pos-abs"></div>
+
+          <div class="ellipse-15-31697 pos-abs"></div>
+
+          <div class="ellipse-19-31700 pos-abs"></div>
+
+          <div class="ellipse-11-31694 pos-abs"></div>
+
+          <div class="ellipse-16-31701 pos-abs">
+            <div
+              class="nodeBg-31701 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+
+          <div class="ellipse-18-31693 pos-abs"></div>
+
+          <div class="ellipse-17-31695 pos-abs">
+            <div
+              class="nodeBg-31695 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+        <!-- hero1 -->
+        <section class="hero-31660 pos-abs">
+          <div class="ellipse-10-31656 pos-abs"></div>
+
+          <div class="image-8-31527 pos-abs">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/c6ca/a559/7a018b89222ec1abfd41a1f975af9a51?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=crJ0f-jBKWQk3nAGBjH4B-nS0a-zvJybHcVhjuXQZbUX-p2JyVSydJ6vPVbcnDji93lVWDDUe1FKexQFle3jVJNDyqnmRZ00RMf-VdAXh2PumymU2-GaDk4SExepq-Qscj6AEXxlzseHyYv5QkTYeL~Wr5v~CVhrs~hiyUrgSSI42YRtFxcAL3v0Q2m29R~5MbGS-mHKLXsx5ZnRXekZGyr6d4HhmLIV-YxWUgNGuCvz67b0kMXTOhPKmNbi~2dV5DB3sgZiI5g6UPhMys0ek0mJDy5kMfAPaHhR8vEGEwh5eGUgT5XZQx2yDOwxKshaGy5VRK7qy-f6YqaaxbpP8w__"
+              class="pos-abs image-div bg-no-repeat bg-crop nodeBg-31527"
+              alt="31527-ALT"
+            />
+          </div>
+        </section>
+        <!-- Focal text1 -->
+        <section class="focal-text-31628 pos-abs">
+          <div class="rectangle-3-31637 pos-abs"></div>
+
+          <div class="c-20-discount-for-31638 pos-abs">
+             <span class="c-20-discount-for-31638-0">20% Discount for 1 Month Subscription</span>
+          </div>
+
+          <div class="laundry-today-o-31636 pos-abs">
+             <span class="laundry-today-o-31636-0">Laundry today or<br>Naked tomorrow.</span>
+          </div>
+
+          <div class="consult-31632 pos-abs">
+            <div class="suds-laundry-se-31635 pos-abs">
+               <span class="suds-laundry-se-31635-0">Hyginiee service will wash, dry, and fold your laundry at an<br>affordable price. Pickup and drop-off options available!</span>
+            </div>
+          </div>
+
+          <div class="start-31629 pos-abs">
+            <div class="rectangle-2-31630 pos-abs"></div>
+
+            <div class="how-it-works-31631 pos-abs">
+               <span class="how-it-works-31631-0">How it works</span>
+            </div>
+          </div>
+
+          <div class="stats-31639 pos-abs">
+            <div class="group-2-31640 pos-abs">
+              <div class="c-18m-31642 pos-abs">
+                 <span class="c-18m-31642-0">18m+</span>
+              </div>
+
+              <div class="happy-customers-31641 pos-abs">
+                 <span class="happy-customers-31641-0">Happy<br>Customers</span>
+              </div>
+            </div>
+
+            <div class="group-3-31643 pos-abs">
+              <div class="c-10-31645 pos-abs">
+                 <span class="c-10-31645-0">10+</span>
+              </div>
+
+              <div class="years-of-experi-31644 pos-abs">
+                 <span class="years-of-experi-31644-0">Years of<br>Experience</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bubbles1 -->
+        <section class="bubbles-31678 pos-abs">
+          <div class="ellipse-11-31666 pos-abs"></div>
+
+          <div class="ellipse-18-31677 pos-abs"></div>
+
+          <div class="ellipse-12-31667 pos-abs"></div>
+
+          <div class="ellipse-13-31668 pos-abs"></div>
+
+          <div class="ellipse-17-31675 pos-abs">
+            <div
+              class="nodeBg-31675 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+
+          <div class="ellipse-14-31669 pos-abs"></div>
+
+          <div class="ellipse-16-31673 pos-abs">
+            <div
+              class="nodeBg-31673 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+
+          <div class="ellipse-15-31670 pos-abs"></div>
+
+          <div class="ellipse-19-31691 pos-abs"></div>
+        </section>
+        <!-- Bubbles2 -->
+        <section class="bubbles-31679 pos-abs">
+          <div class="ellipse-15-31684 pos-abs"></div>
+
+          <div class="ellipse-14-31686 pos-abs"></div>
+
+          <div class="ellipse-13-31683 pos-abs"></div>
+
+          <div class="ellipse-12-31685 pos-abs"></div>
+
+          <div class="ellipse-18-31680 pos-abs"></div>
+
+          <div class="ellipse-11-31681 pos-abs"></div>
+
+          <div class="ellipse-19-31690 pos-abs"></div>
+
+          <div class="ellipse-16-31687 pos-abs">
+            <div
+              class="nodeBg-31687 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+
+          <div class="ellipse-17-31682 pos-abs">
+            <div
+              class="nodeBg-31682 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+        <!-- Steps1 -->
+        <section class="steps-71746 pos-abs">
+          <div class="bg-21345 pos-abs"></div>
+
+          <div class="header-71747 pos-abs">
+            <div class="how-it-works-51707 pos-abs">
+               <span class="how-it-works-51707-0">How it works</span>
+            </div>
+
+            <div class="get-it-done-in--51708 pos-abs">
+               <span class="get-it-done-in--51708-0">Get it done in 4 steps</span>
+            </div>
+          </div>
+
+          <div class="cards-51706 pos-abs">
+            <div class="group-33-71765 pos-abs">
+              <div class="step-1-71766 pos-abs">
+                <div class="rectangle-56-51702 pos-abs"></div>
+
+                <div class="group-29-71752 pos-abs">
+                  <div class="step-1-71753 pos-abs">
+                     <span class="step-1-71753-0">Step 1</span>
+                  </div>
+
+                  <div class="pickup-71754 pos-abs">
+                     <span class="pickup-71754-0">Pickup</span>
+                  </div>
+                </div>
+
+                <div class="addressbro-1-71744 pos-abs">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/a5c7/f5e9/6842945b75367e387cad09109011a5ff?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rhhSOu8mORJR2aU2r7CJYY8fmPGoxg09ti7FUKqDAjjKbS6WXDgdL5Kc4yOyoQUuJa~Ysq-T6PD~J1DLAbsczSRqlusdB8zAndpyZXb0rZWcByVuWmWbYc9a7NiXq7Jp29sNH~ZcuVk71uc8yvjDafisROXkcNHgiJdWmOMAn2q2ep1ZRm3ZOYvdaGp~K-2lkmEVLpjDg5mpi37bd2wg3vZTXlMLQOvB8n6GhFn3QputPrvPm0hHXoOz3VCEGtYY45hbEs4n54-t9p4u-kIsgm0G-w8q35aNC8cKmQZm0hfN6F4NzgtKbE5Xa784KZvGSzjEdX0zr8Wb5-pB-wKPDQ__"
+                    class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-71744"
+                    alt="71744-ALT"
+                  />
+                </div>
+              </div>
+
+              <div class="step-2-71767 pos-abs">
+                <div class="rectangle-60-51710 pos-abs"></div>
+
+                <div class="laundry-and-dry-71736 pos-abs">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/09ce/99a9/ff213804f10ce4720f612785c3305a32?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JOYM~AjA-Kdo83NYYKGktjv1HBik0lhF7v7oLOrpsRsnMjQRZlASQcNbjJII2QXxVAkqGrwG2hgXEal4wNz5y03RlUqLKVDwC9wEBxRAfNNv4sDaygEVpIEIXEnZdB229jFcnUZAlu1DLh3I11F3Owq2ZhZcSUGt7xdxiUUr5S7NpEKwqfBVHB0WU5HC4qxPVMjEOYsw-NIgf1Aq-Et1qetjI1i4QXccaL9iBhtRvuVD9rPdlGIWx82Vqp3w3PIz6nvymX47VzYqrlkJ77l2yTNtsuLpI6qnpREYis7x3qVIjPj5lTFmLfzuiW6hKel-lWc6-aDEDAM6Dw6oSLAfGw__"
+                    class="pos-abs image-div bg-no-repeat bg-crop nodeBg-71736"
+                    alt="71736-ALT"
+                  />
+                </div>
+
+                <div class="group-30-71756 pos-abs">
+                  <div class="step-2-71757 pos-abs">
+                     <span class="step-2-71757-0">Step 2</span>
+                  </div>
+
+                  <div class="wash--dry-71758 pos-abs">
+                     <span class="wash--dry-71758-0">Wash & Dry</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-3-71768 pos-abs">
+                <div class="rectangle-61-51711 pos-abs"></div>
+
+                <div class="laundry-and-dry-71738 pos-abs">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6240/1f16/07c07911ded6b3a3832e5839605c269c?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VCX5iL7fM9EX0TnyfHQLuEJbdZOIm744QqEeAiax28Qo3cHfo5XNgUpCinzu8FRTe8h0fXnFEGlOhzXvXFkQH6ZNkLER0yrtJ9tB2wwlw39uoXMuFPWJBMWtiivEzNcktGW63plPjGx8umnA0VJX7Ob7gv-vXyPM1-Uclgf-CS3TgWKFuCtD61u6PVCiZQ8pssnwhwkLxab9~yQFtyXP0W6DFbyiAHSVF1SIp0UcuF32L60aF7DzSmp3dqS~TZ~EEsR4lC6FpWH0kYLm8Hnv4MFXo3Hw1NOLpAQ0JKVywtSI5HkdMmfcArDNR9OQSZVVAh4SOJ2lPobfuKIu1H8rDw__"
+                    class="pos-abs image-div bg-no-repeat bg-crop nodeBg-71738"
+                    alt="71738-ALT"
+                  />
+                </div>
+
+                <div class="group-31-71759 pos-abs">
+                  <div class="step-3-71760 pos-abs">
+                     <span class="step-3-71760-0">Step 3</span>
+                  </div>
+
+                  <div class="fold-71761 pos-abs">
+                     <span class="fold-71761-0">Fold</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-4-71769 pos-abs">
+                <div class="rectangle-62-51712 pos-abs"></div>
+
+                <div class="group-32-71762 pos-abs">
+                  <div class="step-4-71763 pos-abs">
+                     <span class="step-4-71763-0">Step 4</span>
+                  </div>
+
+                  <div class="delivery-71764 pos-abs">
+                     <span class="delivery-71764-0">Delivery</span>
+                  </div>
+                </div>
+
+                <div class="messengerbro-1-71741 pos-abs">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/e8e7/c5f8/14ff55e8a802ba0ce960db689cd2bf60?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CJZUPmvLbFjm8izpVVGpQUHqRYxq8QzNwOD-I6qyuwvU0L-SLsKEGIiM5HWu7EYR82h-g~LstKrqXY~YTwmavVjz6Hs3nQuTxf8l03A6etlzszRh8-csaCKroSDHpYg91iiUWX4LVuhtnW7hGJUJgS5jhupaqqKdQG4RCT6mKoQhFHkixvnHhu5cXxw-1mIxeh1k1wdV0NMtfGK9zHJ~dxbVYOmzrRdREGrWSxP1uJthf0KhGevH6LiSITyOzw8PVQfrDW2vcq8CsDAO9jGGjvhMdh9dxc~2aZhcogPuolRGM3VvQq9ZB3MTjIXJ~sj~V7Ed1tTotcO1Tf-P054eZA__"
+                    class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-71741"
+                    alt="71741-ALT"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Services1 -->
+        <section class="services-71775 pos-abs">
+          <div class="header-71770 pos-abs">
+            <div class="services-21257 pos-abs">
+               <span class="services-21257-0">Services</span>
+            </div>
+
+            <div class="services--packa-21258 pos-abs">
+               <span class="services--packa-21258-0">Services & Packages</span>
+            </div>
+          </div>
+
+          <div class="cards-71868 pos-abs">
+            <div class="pricing-card-92065 pos-abs">
+              <div class="image-12-1-1-92066 pos-abs">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/01a7/ed11/dbb8f30f73b6c4e708f185b2545a4d82?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tLKWL~g1oRjaW616jvkqOLMZTB6sJ-my-tMxPgL9lcpMaLflzEw1ufhPBwFssXEx8s9Pn0n3tUeNYfqf9pW7gu4cAEr1efDvbNvmfUhiY7yE9T1aKo-vv5yVbiO3OlITO9DeqpxMo1psXa6HYkk0O5YVxHWY~ljiCZw1F~Acy1zuGrE3asUhGeSfapWZ7oJa2CUVffh8ajRI~ynRhS0Tar08Gq1Dl0ez~lxcsuc1Gdjg0oV6CLy36I0VBCxJAwiUpaUixPJPZ5uVJWrDh78qLs9A5WA7PGnIlseDiYsn5c0ikMpWbF0mrFVS9lz5ioDRYsUHIT5TC1M-ogAbOE--~Q__"
+                  class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-92066"
+                  alt="92066-ALT"
+                />
+              </div>
+
+              <div class="title-92067 pos-abs">
+                 <span class="title-92067-0">Couples size</span>
+              </div>
+
+              <div class="title-92068 pos-abs">
+                 <span class="title-92068-0">Perfect for couples size 3-6</span>
+              </div>
+
+              <div class="list-of-items-92069 pos-abs">
+                <div class="whats-included-92070 pos-abs">
+                   <span class="whats-included-92070-0">What’s included</span>
+                </div>
+
+                <div class="list-92071 pos-abs">
+                  <div class="bxscheckcircle--92072 pos-abs">
+                    <div class="vector-92073 pos-abs">
+                      <div
+                        class="nodeBg-92073 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="c-4-loads-per-wee-92074 pos-abs">
+                     <span class="c-4-loads-per-wee-92074-0">4 loads per week</span>
+                  </div>
+                </div>
+
+                <div class="list-92075 pos-abs">
+                  <div class="bxscheckcircle--92076 pos-abs">
+                    <div class="vector-92077 pos-abs">
+                      <div
+                        class="nodeBg-92077 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="up-to-12-lbs-pe-92078 pos-abs">
+                     <span class="up-to-12-lbs-pe-92078-0">up to 12 lbs per load</span>
+                  </div>
+                </div>
+
+                <div class="list-92079 pos-abs">
+                  <div class="bxscheckcircle--92080 pos-abs">
+                    <div class="vector-92081 pos-abs">
+                      <div
+                        class="nodeBg-92081 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="special-garment-92082 pos-abs">
+                     <span class="special-garment-92082-0">Special garments</span>
+                  </div>
+                </div>
+
+                <div class="list-92083 pos-abs">
+                  <div class="bxscheckcircle--92084 pos-abs">
+                    <div class="vector-92085 pos-abs">
+                      <div
+                        class="nodeBg-92085 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="pickup--drop-of-92086 pos-abs">
+                     <span class="pickup--drop-of-92086-0">Pickup & drop off</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider-92090 pos-abs"></div>
+
+              <div class="pricing-92087 pos-abs">
+                 <span class="pricing-92087-0">20 dollars </span
+                > <span class="pricing-92087-1">/per month</span>
+              </div>
+
+              <div class="primary-button-92088 pos-abs">
+                <div class="button-label-92089 pos-abs">
+                   <span class="button-label-92089-0">Choose</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card-4-91985 pos-abs">
+              <div class="image-13-1-1-92001 pos-abs">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/c9ed/3af3/7adde321a6caec97895d6a1e7d1de08e?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DCm5HyrKWBjNqRg6lDo3IfsyunFwRQnl92YceZoyTU9FuOGrKeaK56jhu2-6Vy7VeFrOLozVQDy0tXsIkhFq9YNpJiL2waKx9CriPQ-UOgBKncazcOwNTb6kFJEmoeDrq8Vavra6LSt0y1GWKdT0H4TjeFaJZPOpp9x~6qjV~ZkGDBOXkfCJ12aRdK3inq0jPtGPRgO8dPQAxq82s14wqLyKBvbUbGIUT1TyTI0RroJAzjFY8ZMuB3sDvj8sxVRSl7mMH9AE9~AEsZ4V6~3k5O4DSgDRQ9SPEU2xqsJA72yjmzuDjACAtocCx6jIHKelkJ0tXp5qnns6MAHmdveKPQ__"
+                  class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-92001"
+                  alt="92001-ALT"
+                />
+              </div>
+
+              <div class="title-91986 pos-abs">
+                 <span class="title-91986-0">Single size</span>
+              </div>
+
+              <div class="title-92002 pos-abs">
+                 <span class="title-92002-0">Perfect for people who live alone</span>
+              </div>
+
+              <div class="list-of-items-91987 pos-abs">
+                <div class="whats-included-91988 pos-abs">
+                   <span class="whats-included-91988-0">What’s included</span>
+                </div>
+
+                <div class="list-91989 pos-abs">
+                  <div class="bxscheckcircle--91990 pos-abs">
+                    <div class="vector-91991 pos-abs">
+                      <div
+                        class="nodeBg-91991 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="c-2-loads-per-wee-91992 pos-abs">
+                     <span class="c-2-loads-per-wee-91992-0">2 loads per week</span>
+                  </div>
+                </div>
+
+                <div class="list-91993 pos-abs">
+                  <div class="bxscheckcircle--91994 pos-abs">
+                    <div class="vector-91995 pos-abs">
+                      <div
+                        class="nodeBg-91995 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="up-to-10-lbs-pe-91996 pos-abs">
+                     <span class="up-to-10-lbs-pe-91996-0">up to 10 lbs per load</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider-92000 pos-abs"></div>
+
+              <div class="pricing-91997 pos-abs">
+                 <span class="pricing-91997-0">10 dollars </span
+                > <span class="pricing-91997-1">/per month</span>
+              </div>
+
+              <div class="primary-button-91998 pos-abs">
+                <div class="button-label-91999 pos-abs">
+                   <span class="button-label-91999-0">Choose</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card-3-91955 pos-abs">
+              <div class="image-11-1-1-91956 pos-abs">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/57d2/14e3/d80f6693c78c866370aaec179c0a2fdf?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tHiVxQLEvwq8d8bGhpiDOlF0G5kDxZrWAKtTy76WyL1Bpb0FwyUBfPUdtmWz6befBImlamBaDphbQ3EJU1KHqu55BzXTNTc-gxblo3bdSsxZyfO~dTWmByn2aBT5tmKc5RGVnJ0LLstXglSo~k87x0kFJk-p3x8YQzmgRuiVQmqzHGkmNTm7lrvnaSx08TO5LCDMTV~uMmsF-4IO2vNpPyJTZR0X4Wd2gb~K~tL0xzGXZPHRUxiymsofOOQUjF7CiYNu0khQTEP~N5P1StT0YIuKCcHEJg7wrCgwUrxPMlOlhkUZ4tL7mFEtC8B5lZaQesNyUVS7G14FoeIzBQSyPQ__"
+                  class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-91956"
+                  alt="91956-ALT"
+                />
+              </div>
+
+              <div class="title-91957 pos-abs">
+                 <span class="title-91957-0">Family size</span>
+              </div>
+
+              <div class="title-91958 pos-abs">
+                 <span class="title-91958-0">Perfect for families size 4-6</span>
+              </div>
+
+              <div class="list-of-items-91959 pos-abs">
+                <div class="whats-included-91960 pos-abs">
+                   <span class="whats-included-91960-0">What’s included</span>
+                </div>
+
+                <div class="list-91961 pos-abs">
+                  <div class="bxscheckcircle--91962 pos-abs">
+                    <div class="vector-91963 pos-abs">
+                      <div
+                        class="nodeBg-91963 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="c-6-loads-per-wee-91964 pos-abs">
+                     <span class="c-6-loads-per-wee-91964-0">6 loads per week</span>
+                  </div>
+                </div>
+
+                <div class="list-91965 pos-abs">
+                  <div class="bxscheckcircle--91966 pos-abs">
+                    <div class="vector-91967 pos-abs">
+                      <div
+                        class="nodeBg-91967 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="up-to-15-lbs-pe-91968 pos-abs">
+                     <span class="up-to-15-lbs-pe-91968-0">up to 15 lbs per load</span>
+                  </div>
+                </div>
+
+                <div class="list-91969 pos-abs">
+                  <div class="bxscheckcircle--91970 pos-abs">
+                    <div class="vector-91971 pos-abs">
+                      <div
+                        class="nodeBg-91971 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="special-garment-91972 pos-abs">
+                     <span class="special-garment-91972-0">Special garments</span>
+                  </div>
+                </div>
+
+                <div class="list-91973 pos-abs">
+                  <div class="bxscheckcircle--91974 pos-abs">
+                    <div class="vector-91975 pos-abs">
+                      <div
+                        class="nodeBg-91975 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="pickup--drop-of-91976 pos-abs">
+                     <span class="pickup--drop-of-91976-0">Pickup & drop off</span>
+                  </div>
+                </div>
+
+                <div class="list-91977 pos-abs">
+                  <div class="bxscheckcircle--91978 pos-abs">
+                    <div class="vector-91979 pos-abs">
+                      <div
+                        class="nodeBg-91979 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="free-detergent--91980 pos-abs">
+                     <span class="free-detergent--91980-0">Free detergent samples</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider-91984 pos-abs"></div>
+
+              <div class="pricing-91981 pos-abs">
+                 <span class="pricing-91981-0">30 dollars </span
+                > <span class="pricing-91981-1">/per month</span>
+              </div>
+
+              <div class="primary-button-91982 pos-abs">
+                <div class="button-label-91983 pos-abs">
+                   <span class="button-label-91983-0">Choose</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Foot image1 -->
+        <section class="foot-image-112163 pos-abs">
+          <div class="thinking-facebr-112178 pos-abs">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/b1ad/2c71/c4c8b97c33cb8f6b14aa0445efb2e19c?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PKAFy8JMsdTk-hnOyeCPd5J9c0XfNuEplp-MSG7V7rdDxLU79tj1Nmvphj7esJgFBuOXPdSDOQt0JOhpik9kQSfhRsAF~W8P965vT2B4gVgQPCSAU2cbdOVsIPWyCwTURI7s17Of23elVY7LvNulu64gNSm9IbD-fMxttik0hMzbzfAmC03J9gwjo~VtiBl3Wvh9JS5hdZqR1cFSIkOjPvTZ5mGhSdQq2Jcbb63mrcJFcf5xl~kvbxmm4y2bgB77vRyejFNuO0LsOrdtW3vICEWPaLerPtQOvhUmn1AIwjz6dVTRrIvLnDMmNJXWdCbPWz0E05dczXQiO3YKRBHUUQ__"
+              class="pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-112178"
+              alt="112178-ALT"
+            />
+          </div>
+
+          <div class="rectangle-48-112164 pos-abs"></div>
+
+          <div class="group-19-112165 pos-abs">
+            <div class="hard-time-decid-112166 pos-abs">
+               <span class="hard-time-decid-112166-0">Hard time deciding<br>what’s best for you?</span>
+            </div>
+
+            <div class="group-18-112167 pos-abs">
+              <div class="rectangle-49-112168 pos-abs"></div>
+
+              <div class="learn-more-112169 pos-abs">
+                 <span class="learn-more-112169-0">Learn more</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer1 -->
+        <section class="footer-112157 pos-abs">
+          <div class="rectangle-67-112118 pos-abs"></div>
+
+          <div class="bubbles-112135 pos-abs">
+            <div class="ellipse-11-112137 pos-abs"></div>
+
+            <div class="ellipse-12-112142 pos-abs"></div>
+
+            <div class="ellipse-18-112136 pos-abs"></div>
+
+            <div class="ellipse-13-112139 pos-abs"></div>
+
+            <div class="ellipse-17-112138 pos-abs">
+              <div
+                class="nodeBg-112138 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+              ></div>
+            </div>
+
+            <div class="ellipse-16-112144 pos-abs">
+              <div
+                class="nodeBg-112144 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+              ></div>
+            </div>
+
+            <div class="ellipse-14-112143 pos-abs"></div>
+
+            <div class="ellipse-15-112140 pos-abs"></div>
+
+            <div class="ellipse-19-112141 pos-abs"></div>
+          </div>
+
+          <div class="nav--b-text-21307 pos-abs">
+            <div class="about-us-21308 pos-abs">
+               <span class="about-us-21308-0">Abou</span
+              > <span class="about-us-21308-1">t us</span>
+            </div>
+
+            <div class="company-21321 pos-abs">
+               <span class="company-21321-0">Company</span>
+            </div>
+
+            <div class="services-21322 pos-abs">
+               <span class="services-21322-0">Services</span>
+            </div>
+
+            <div class="check-us-out-21323 pos-abs">
+               <span class="check-us-out-21323-0">Check us out</span>
+            </div>
+
+            <div class="iconfacebook-21324 pos-abs">
+              <div class="vector-I21324_15182 pos-abs">
+                <div
+                  class="nodeBg-I21324_15182 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                ></div>
+              </div>
+            </div>
+
+            <div class="iconinstagram-21325 pos-abs">
+              <div class="vector-I21325_15176 pos-abs">
+                <div
+                  class="nodeBg-I21325_15176 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                ></div>
+              </div>
+
+              <div class="vector-I21325_15177 pos-abs">
+                <div
+                  class="nodeBg-I21325_15177 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                ></div>
+              </div>
+            </div>
+
+            <div class="iconlinkedin-21326 pos-abs">
+              <div class="vector-I21326_2358 pos-abs">
+                <div
+                  class="nodeBg-I21326_2358 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+                ></div>
+              </div>
+            </div>
+
+            <div class="about-us-21309 pos-abs">
+               <span class="about-us-21309-0">Abou</span
+              > <span class="about-us-21309-1">t us</span>
+            </div>
+
+            <div class="our-team-21313 pos-abs">
+               <span class="our-team-21313-0">Our team</span>
+            </div>
+
+            <div class="pickup-21318 pos-abs">
+               <span class="pickup-21318-0">Pickup</span>
+            </div>
+
+            <div class="creators-21310 pos-abs">
+               <span class="creators-21310-0">Creators</span>
+            </div>
+
+            <div class="terms-21314 pos-abs">
+               <span class="terms-21314-0">Terms</span>
+            </div>
+
+            <div class="drop-off-21319 pos-abs">
+               <span class="drop-off-21319-0">Drop off</span>
+            </div>
+
+            <div class="philosophy-21311 pos-abs">
+               <span class="philosophy-21311-0">Philosophy</span>
+            </div>
+
+            <div class="how-it-works-21315 pos-abs">
+               <span class="how-it-works-21315-0">How it works</span>
+            </div>
+
+            <div class="laundry-21320 pos-abs">
+               <span class="laundry-21320-0">Laundry</span>
+            </div>
+
+            <div class="contact-us-21312 pos-abs">
+               <span class="contact-us-21312-0">Contact us</span>
+            </div>
+
+            <div class="blog-21316 pos-abs">
+               <span class="blog-21316-0">Blog</span>
+            </div>
+          </div>
+
+          <div class="bubbles-112145 pos-abs">
+            <div class="ellipse-18-112146 pos-abs"></div>
+
+            <div class="ellipse-11-112147 pos-abs"></div>
+
+            <div class="ellipse-13-112149 pos-abs"></div>
+
+            <div class="ellipse-12-112151 pos-abs"></div>
+
+            <div class="ellipse-19-112153 pos-abs"></div>
+
+            <div class="ellipse-17-112148 pos-abs">
+              <div
+                class="nodeBg-112148 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+              ></div>
+            </div>
+
+            <div class="ellipse-16-112154 pos-abs">
+              <div
+                class="nodeBg-112154 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat"
+              ></div>
+            </div>
+          </div>
+
+          <div class="logo-112119 pos-abs">
+            <div class="logo-112120 pos-abs">
+              <div class="logo-112121 pos-abs">
+                <div class="suds-laundry-112122 pos-abs">
+                   <span class="suds-laundry-112122-0">Hyginiee</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+   
+  </body>
+</html>
